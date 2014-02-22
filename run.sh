@@ -1,1 +1,1 @@
-python raspy.py /media/1TB/Ausland/ /media/1TB/Ausland2/
+python raspy.py "/media/1TB\ Daten/Ausland/" "/media/1TB\ Daten/Ausland2/"

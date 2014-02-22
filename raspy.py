@@ -454,6 +454,27 @@ def start(source="", destination="", keepDirectoryStructure=False):
 
 if len(sys.argv) == 3:
 	start(source=sys.argv[1], destination=sys.argv[2], keepDirectoryStructure=False)
+elif len(sys.argv > 3:
+	if sys.argv[1].startswith("\""):
+		begin = 1
+		end = 1
+		source = sys.argv[1][1:]
+		for i in range(2, len(sys.argv)-1):
+			
+			# parse source
+			if sys.argv[i].endswith("\""):
+				end = i
+				source+=sys.argv[i][0:len(sys.argv(i))-2]
+				break
+			else:
+				source+=sys.argv[i]
+		
+		for d in range (end + 1, len(sys.argv)-1):
+			# parse destination
+
+	else:
+		print "Error in your syntax..."
+
 else:
 	print 
 	print "Please provide a Source and a Destination directory!"
